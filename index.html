@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="./images/favicon-rap.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Цитаты Канье Уэста</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <div class="header__wrap">
+        <h1 class="header__title">Цитаты Канье Уэста</h1>
+        <p class="header__text">Нажми на&nbsp;кнопку и наберись мудрости от&nbsp;мистера&nbsp;Уэста</p>
+      </div>
+      <div class="header__toggle-btn" id="toggle-btn">
+        <input class="header__input" type="checkbox">
+        <span class="header__span"></span>
+      </div>
+    </div>
+    <button class="header__btn">Йоу!</button>
+  </header>
+
+  <section class="error hide-section">
+    <img class="error__image" src="./images/sad_emoji.png" alt="Sad emoji">
+    <p class="error__text">Во&nbsp;время запроса произошла ошибка. Возможно, проблема с&nbsp;соединением или сервер недоступен. Подождите немного и&nbsp;попробуйте ещё раз.</p>
+  </section>
+
+  <section class="content">
+    <div class="content__quote"></div>
+  </section>
+
+  <div class="scroll-btn">
+    <div class="scroll-btn__arrow"></div>
+  </div>
+
+  <script src="./libs/jquery/jquery-3.5.1.min.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+</html>
