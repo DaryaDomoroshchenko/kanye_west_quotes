@@ -1,5 +1,8 @@
 $(document).ready(() => {
 
+  /* Переменные */
+  const quote = document.querySelector('.content__quote');
+
   /* Функции */
 
   function setCurrentTheme() {
@@ -33,12 +36,7 @@ $(document).ready(() => {
         return res.json();
       })
       .then((data) => {
-        if (data.quote.includes('...')) {
-          const validatedQuote = data.quote.replace('...', '... ');
-          $('.content__quote').text(validatedQuote);
-        } else {
-          $('.content__quote').text(data.quote);
-        }
+        smoothly(quote, 'textContent', data.quote);
       })
       .catch((err) => {
         $('.error').removeClass('hide-section');

@@ -85,16 +85,8 @@ body {
   background-color: #ff2b95;
 }
 
-.header-btn-black-theme:hover {
-  background-color: #517efa;
-}
-
 .header-btn-white-theme {
   background-color: #517efa;
-}
-
-.header-btn-white-theme:hover {
-  background-color: #ff2b95;
 }
 
 /*Content*/
@@ -109,6 +101,7 @@ body {
   font-size: 5em;
   font-weight: bold;
   margin: 50px 0 40px;
+  word-wrap: break-word;
 }
 
 /*Error*/
@@ -211,7 +204,7 @@ input[type="checkbox"] {
   z-index: 2;
 }
 
-#toggle-btn span {
+.header__toggle-btn span {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -224,7 +217,7 @@ input[type="checkbox"] {
   transition: 0.8s ease border-color;
 }
 
-#toggle-btn span:before {
+.header__toggle-btn span:before {
   content: '';
   position: absolute;
   top: -8px;
@@ -239,16 +232,16 @@ input[type="checkbox"] {
   transition: 0.4s ease border-radius, 0.4s ease transform, 0.6s ease width, 0.6s ease margin-left, 0.8s ease border-color;
 }
 
-#toggle-btn input[type="checkbox"]:active + span:before {
+.header__toggle-btn input[type="checkbox"]:active + span:before {
   width: 80px;
   border-radius: 40px;
 }
 
-#toggle-btn input[type="checkbox"]:checked + span {
+.header__toggle-btn input[type="checkbox"]:checked + span {
   border-color: #000;
 }
 
-#toggle-btn input[type="checkbox"]:checked + span:before {
+.header__toggle-btn input[type="checkbox"]:checked + span:before {
   border-color: #000;
   transform: translate(63px,0px);
 }
@@ -280,6 +273,18 @@ input[type="checkbox"] {
 @media screen and (max-width: 520px) {
   .header__btn {
     margin-top: 15px;
+  }
+}
+
+@media screen and (min-width : 769px) {
+  .header-btn-black-theme:hover {
+    background-color: #517efa;
+  }
+}
+
+@media screen and (min-width : 769px) {
+  .header-btn-white-theme:hover {
+    background-color: #ff2b95;
   }
 }
 
